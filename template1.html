@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="template1.css">
+    <script src="template1.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            Header
+        </header>
+        <div class="row">
+            <nav class="nav">
+                Nav
+            </nav>
+            <div class="mainContent">
+                MainContent
+            </div>
+            <aside class="sideBar">
+                Sidebar
+            </aside>
+        </div>
+        <footer class="footer">
+            Footer
+        </footer>
+    </div>
+</body>
+
+</html>
+
+function initDynamicGrid(numRows, numColumns){
+      const totalSqaures = numRows * numColumns;
+      let rowsString = "";
+      let columnsString = "";
+      for(let i = 0; i < numRows;i++){
+        if(i === numRows -1){
+          rowsString +="1fr";
+        }else{
+          rowsString +="1fr ";
+        }
+      }
+      for(let i = 0; i < numColumns;i++){
+        if(i === numColumns -1){
+          columnsString +="1fr";
+        }else{
+          columnsString +="1fr ";
+        }
+      }
+      let gridContainer = document.createElement('div');
+      gridContainer.style.display ="grid";
+      gridContainer.style.gridTemplateRows = rowsString;
+      gridContainer.style.gridTemplateColumns = columnsString;
+
+      for(let i = 0; i < totalSqaures; i++){
+        let squareInGrid = document.createElement('div');
+         // Here you can put stuff into the squareInGrid or append css to it.
+        gridContainer.appendChild(squareInGrid );
+      }
+}

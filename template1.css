@@ -1,0 +1,60 @@
+.container {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    background: rgb(7, 47, 70);
+    margin: 1%;
+}
+
+.header {
+    width: 98%;
+    background-color: blue;
+    color: White;
+    text-align: center;
+    padding: 1%;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.footer {
+    width: 98%;
+    background: blue;
+    color: White;
+    text-align: center;
+    padding: 1%;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.row {
+    display: flex;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.nav {
+    flex-basis: 20%;
+    background: lightskyblue;
+    color: White;
+    text-align: center;
+    padding: 14% 0% 14% 0%;
+    margin: 12px 0px 12px 0px;
+}
+
+.mainContent {
+    flex-basis: 60%;
+    background: grey;
+    color: White;
+    text-align: center;
+    padding: 14% 0% 14% 0%;
+    margin: 12px 12px;
+}
+
+.sideBar {
+    flex-basis: 20%;
+    background: lightskyblue;
+    color: White;
+    text-align: center;
+    padding: 14% 0% 14% 0%;
+    margin: 12px 0px 12px 0px;
+}
