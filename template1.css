@@ -4,6 +4,8 @@
     flex-direction: column;
     background: rgb(7, 47, 70);
     margin: 1%;
+    font-weight: 600;
+
 }
 
 .header {
@@ -14,6 +16,8 @@
     padding: 1%;
     font-size: 24px;
     font-weight: 600;
+
+
 }
 
 .footer {
@@ -30,6 +34,7 @@
     display: flex;
     font-size: 24px;
     font-weight: 600;
+
 }
 
 .nav {
@@ -48,6 +53,7 @@
     text-align: center;
     padding: 14% 0% 14% 0%;
     margin: 12px 12px;
+    font-weight: 600;
 }
 
 .sideBar {
